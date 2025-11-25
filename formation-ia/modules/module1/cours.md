@@ -1,6 +1,9 @@
 # Module 1 : Introduction et fondamentaux de l'IA
 ## Durée : 2 heures
 
+![AI Banner](https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000&auto=format&fit=crop)
+*L'Intelligence Artificielle transforme notre monde*
+
 ---
 
 ## 🎯 Objectifs du module
@@ -17,12 +20,31 @@
 
 ### 1.1 Définition et concepts clés
 
+![AI Concept](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2000&auto=format&fit=crop)
+*Représentation conceptuelle de l'Intelligence Artificielle*
+
 L'**Intelligence Artificielle (IA)** est la simulation de processus d'intelligence humaine par des machines, notamment des systèmes informatiques. Ces processus incluent :
 - L'apprentissage (acquisition d'informations et règles)
 - Le raisonnement (utilisation de règles pour atteindre des conclusions)
 - L'auto-correction
 
 ### 1.2 Les trois piliers de l'IA moderne
+
+![AI Pillars](https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=2000&auto=format&fit=crop)
+*Les fondations de l'IA moderne : ML, DL et IA Générative*
+
+```mermaid
+graph TD
+    A[Intelligence Artificielle] --> B[Machine Learning]
+    A --> C[Règles Expertes]
+    B --> D[Deep Learning]
+    B --> E[Apprentissage Supervisé]
+    B --> F[Apprentissage Non Supervisé]
+    D --> G[IA Générative]
+    G --> H[ChatGPT]
+    G --> I[Midjourney]
+    G --> J[Claude]
+```
 
 #### 🧠 **Machine Learning (Apprentissage automatique)**
 - Permet aux machines d'apprendre sans être explicitement programmées
@@ -49,7 +71,20 @@ L'**Intelligence Artificielle (IA)** est la simulation de processus d'intelligen
 
 ## 📚 Leçon 2 : Les différents types d'IA
 
+![Types of AI](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2000&auto=format&fit=crop)
+*Évolution et classification de l'Intelligence Artificielle*
+
 ### 2.1 Classification par capacités
+
+```mermaid
+graph LR
+    A[IA Faible/ANI] -->|Évolution| B[IA Générale/AGI]
+    B -->|Futur hypothétique| C[IA Super-intelligente/ASI]
+    
+    style A fill:#90EE90
+    style B fill:#FFD700
+    style C fill:#FF6B6B
+```
 
 | Type d'IA | Description | Exemples | État actuel |
 |-----------|-------------|----------|-------------|
@@ -83,7 +118,19 @@ L'**Intelligence Artificielle (IA)** est la simulation de processus d'intelligen
 
 ## 📚 Leçon 3 : Applications concrètes de l'IA
 
+![AI Applications](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2000&auto=format&fit=crop)
+*L'IA révolutionne tous les secteurs d'activité*
+
 ### 3.1 Dans le monde professionnel
+
+```mermaid
+pie title Adoption de l'IA par secteur (2025)
+    "Marketing & Com" : 35
+    "Finance" : 25
+    "Santé" : 20
+    "Industrie" : 15
+    "Autres" : 5
+```
 
 #### 📊 **Marketing & Communication**
 - Personnalisation des campagnes
@@ -127,22 +174,25 @@ L'**Intelligence Artificielle (IA)** est la simulation de processus d'intelligen
 
 ## 📚 Leçon 4 : Les outils IA populaires
 
+![AI Tools](https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2000&auto=format&fit=crop)
+*L'écosystème des outils IA en 2025*
+
 ### 4.1 Outils de génération de texte
 
 #### **ChatGPT (OpenAI)**
-- **Forces** : Polyvalent, conversationnel, multilingue
-- **Utilisations** : Rédaction, traduction, code, analyse
-- **Limites** : Données jusqu'à avril 2024, peut halluciner
+- **Forces** : Polyvalent, conversationnel, multilingue, GPT-4o avec capacités multimodales
+- **Utilisations** : Rédaction, traduction, code, analyse, vision par ordinateur
+- **Limites** : Peut halluciner, coût API pour usage intensif
 
 #### **Claude (Anthropic)**
-- **Forces** : Précis, éthique, grande fenêtre de contexte
-- **Utilisations** : Analyse de documents, rédaction longue
-- **Limites** : Moins créatif que GPT-4
+- **Forces** : Précis, éthique, fenêtre de contexte de 200K tokens, Claude 3.5 Sonnet très performant
+- **Utilisations** : Analyse de documents, rédaction longue, code complexe
+- **Limites** : Accès plus limité que ChatGPT
 
 #### **Gemini (Google)**
-- **Forces** : Intégration Google, multimodal
-- **Utilisations** : Recherche, analyse d'images
-- **Limites** : Encore en développement
+- **Forces** : Intégration Google, multimodal natif, Gemini 2.0 très performant
+- **Utilisations** : Recherche, analyse d'images et vidéos, intégration Workspace
+- **Limites** : Disponibilité variable selon les régions
 
 #### **Copilot (Microsoft)**
 - **Forces** : Intégration Office, productivité
@@ -150,6 +200,9 @@ L'**Intelligence Artificielle (IA)** est la simulation de processus d'intelligen
 - **Limites** : Nécessite abonnement Microsoft
 
 ### 4.2 Outils de génération d'images
+
+![AI Image Tools](https://images.unsplash.com/photo-1686191128892-3e6fdd51fb1c?q=80&w=2000&auto=format&fit=crop)
+*Outils de génération d'images par IA*
 
 | Outil | Forces | Cas d'usage | Prix |
 |-------|--------|-------------|------|
@@ -171,6 +224,9 @@ L'**Intelligence Artificielle (IA)** est la simulation de processus d'intelligen
 ---
 
 ## 🏃 Exercices pratiques
+
+![Practice](https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2000&auto=format&fit=crop)
+*La pratique est la clé de la maîtrise de l'IA*
 
 ### Exercice 1 : Identification des types d'IA
 **Durée : 10 minutes**
@@ -234,8 +290,9 @@ Pour votre entreprise ou secteur d'activité, identifiez :
 
 ### Articles recommandés
 - "What is AI?" - MIT Technology Review
-- "The State of AI Report 2024" - Nathan Benaich
+- "The State of AI Report 2025" - Nathan Benaich
 - "IA pour les nuls" - Microsoft Learn
+- "Guide pratique de l'IA en entreprise" - McKinsey 2025
 
 ### Vidéos
 - "But what is a neural network?" - 3Blue1Brown (20 min)

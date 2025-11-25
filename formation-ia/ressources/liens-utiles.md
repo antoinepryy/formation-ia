@@ -297,12 +297,13 @@
 
 ## 🚀 Nouveautés & Tendances
 
-### À Suivre en 2024-2025
-- **GPT-5** : Prochaine génération OpenAI
-- **Gemini Ultra** : Version avancée Google
-- **Claude 3** : Évolution Anthropic
-- **Sora** : Génération vidéo OpenAI
-- **Project Astra** : Assistant Google
+### À Suivre en 2025-2026
+- **GPT-5** : Prochaine génération OpenAI (Q2 2025)
+- **Gemini 2.0 Flash** : Déjà disponible, très rapide et performant
+- **Claude 3.5 Opus** : Version la plus puissante d'Anthropic (Q1 2025)
+- **Sora** : Génération vidéo OpenAI en déploiement progressif
+- **Project Astra** : Assistant multimodal Google
+- **Llama 4** : Open source Meta (Q2 2025)
 
 ### Technologies Émergentes
 - **Agents IA Autonomes**
@@ -313,6 +314,8 @@
 
 ---
 
-*Liste mise à jour régulièrement - Dernière MAJ : Novembre 2024*
+*Liste mise à jour régulièrement - Dernière MAJ : Janvier 2025*
+
+📧 **Contact formateur** : antoine.ap.57@gmail.com
 
 💡 **Tip :** Ajoutez cette page à vos favoris pour un accès rapide à toutes les ressources IA !

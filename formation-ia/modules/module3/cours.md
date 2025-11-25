@@ -22,10 +22,11 @@
 
 #### 🎨 **Caractéristiques principales**
 - **Style artistique unique** : Esthétique distinctive et cinématographique
-- **Haute résolution** : Images jusqu'à 2048x2048 pixels
+- **Haute résolution** : Images jusqu'à 2048x2048 pixels (4K avec upscale)
 - **Variations infinies** : 4 variations par génération
 - **Communauté active** : Discord avec millions d'utilisateurs
-- **Evolution constante** : Versions régulièrement améliorées (V6 actuellement)
+- **Evolution constante** : Version 6.1 actuelle avec améliorations constantes
+- **Nouvelles fonctionnalités 2025** : Style tuner, Consistent characters, Video generation (alpha)
 
 #### 💡 **Architecture et fonctionnement**
 1. **Input** : Prompt textuel

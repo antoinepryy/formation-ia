@@ -5,7 +5,7 @@
 ![Formation IA](https://img.shields.io/badge/Formation-IA%20G%C3%A9n%C3%A9rative-blue)
 ![Durée](https://img.shields.io/badge/Dur%C3%A9e-15%20heures-green)
 ![Niveau](https://img.shields.io/badge/Niveau-D%C3%A9butant%20%C3%A0%20Avanc%C3%A9-orange)
-![Mise à jour](https://img.shields.io/badge/MAJ-Novembre%202024-red)
+![Mise à jour](https://img.shields.io/badge/MAJ-Janvier%202025-red)
 
 ---
 
@@ -248,11 +248,12 @@ formation-ia/
 
 ## 📈 Évolution et mises à jour
 
-### Roadmap 2024-2025
-- ✅ **Q4 2024** : Lancement formation complète
-- 🔄 **Q1 2025** : Ajout module "IA et Code"
-- 🔄 **Q2 2025** : Module "IA Vidéo et Animation"
-- 🔄 **Q3 2025** : Certification niveau avancé
+### Roadmap 2025-2026
+- ✅ **Q1 2025** : Formation opérationnelle avec dernières mises à jour (GPT-4o, Claude 3.5, Gemini 2.0)
+- 🔄 **Q2 2025** : Ajout module "Agents IA Autonomes"
+- 🔄 **Q3 2025** : Module "IA Vidéo avec Sora et alternatives"
+- 🔄 **Q4 2025** : Certification niveau expert
+- 🔄 **Q1 2026** : Module "IA et Robotique"
 
 ### Veille technologique
 Nous suivons en permanence :
@@ -294,15 +295,14 @@ Un grand merci à :
 
 **Pour vous inscrire ou obtenir plus d'informations :**
 
-🌐 Site web : www.formation-ia-generative.fr  
-📧 Email : contact@formation-ia.fr  
-📱 Téléphone : 01 23 45 67 89  
-💼 LinkedIn : /company/formation-ia  
+📧 Email : antoine.ap.57@gmail.com  
+💼 LinkedIn : /in/antoine-ap  
 
-### Sessions 2024-2025
-- **Décembre 2024** : 4-6 et 11-13
-- **Janvier 2025** : 8-10 et 22-24
-- **Février 2025** : 5-7 et 19-21
+### Sessions 2025
+- **Janvier 2025** : 15-17 et 29-31
+- **Février 2025** : 12-14 et 26-28
+- **Mars 2025** : 12-14 et 26-28
+- **Avril 2025** : 9-11 et 23-25
 
 **Places limitées - Inscription anticipée recommandée**
 
@@ -312,6 +312,6 @@ Un grand merci à :
 
 ---
 
-*Formation créée et maintenue par des experts IA passionnés*
+*Formation créée et maintenue par Antoine AP - Expert en IA et transformation digitale*
 
-*Dernière mise à jour : Novembre 2024*
+*Dernière mise à jour : Janvier 2025*

@@ -1,82 +1,362 @@
-# Module 2 : IA Générative & Prompt Engineering
+# Module 2 : IA Générative & Prompt Engineering - Maîtrise de ChatGPT
 ## Durée : 3 heures
+
+![ChatGPT Banner](https://images.unsplash.com/photo-1655720828018-edd2daec9349?q=80&w=2000&auto=format&fit=crop)
+*ChatGPT et l'IA conversationnelle : votre assistant intelligent*
 
 ---
 
 ## 🎯 Objectifs du module
 
 À la fin de ce module, vous serez capable de :
-- Comprendre le fonctionnement des modèles de langage génératifs
-- Maîtriser les techniques de prompt engineering
-- Optimiser vos interactions avec les IA conversationnelles
-- Créer des prompts réutilisables pour différents cas d'usage
-- Implémenter des stratégies avancées de génération de contenu
+- ✅ Comprendre en profondeur le fonctionnement de ChatGPT et des LLM
+- ✅ Maîtriser toutes les fonctionnalités de ChatGPT (GPT-4, GPT-4o, plugins, vision)
+- ✅ Créer des prompts efficaces et optimisés pour tout cas d'usage
+- ✅ Utiliser ChatGPT pour des tâches professionnelles complexes
+- ✅ Éviter les pièges courants et maximiser la qualité des réponses
+- ✅ Construire une bibliothèque de prompts réutilisables
 
 ---
 
-## 📚 Leçon 1 : Comprendre l'IA Générative
+## 📚 Leçon 1 : Comprendre ChatGPT en profondeur
 
-### 1.1 Architecture des modèles de langage
+### 1.1 Qu'est-ce que ChatGPT exactement ?
 
-#### 🧠 **Comment fonctionne un LLM (Large Language Model) ?**
+![ChatGPT Architecture](https://images.unsplash.com/photo-1676299081847-824916de030a?q=80&w=2000&auto=format&fit=crop)
+*L'architecture révolutionnaire de ChatGPT*
 
-Les modèles de langage sont entraînés sur d'immenses corpus de texte pour prédire le mot suivant dans une séquence. Cette simplicité apparente cache une complexité remarquable.
+**ChatGPT** (Chat Generative Pre-trained Transformer) est un modèle de langage développé par OpenAI, basé sur l'architecture GPT (Generative Pre-trained Transformer). Il représente une avancée majeure dans l'IA conversationnelle.
 
-**Processus de fonctionnement :**
-1. **Tokenisation** : Découpage du texte en unités (tokens)
-2. **Encodage** : Transformation en vecteurs numériques
-3. **Attention** : Analyse des relations entre les mots
-4. **Prédiction** : Génération probabiliste du texte suivant
-5. **Décodage** : Conversion en texte lisible
+#### 📊 **Évolution des versions ChatGPT**
 
-**Exemple concret :**
+```mermaid
+timeline
+    title Évolution de ChatGPT (2022-2025)
+    
+    2022-11 : ChatGPT 3.5 
+            : Lancement public
+            : 175B paramètres
+            
+    2023-03 : GPT-4
+            : Multimodal
+            : Plus précis
+            
+    2024-05 : GPT-4o
+            : Vision native
+            : Audio/Vidéo
+            : Plus rapide
+            
+    2025 Q2 : GPT-5
+            : AGI proche
+            : Raisonnement avancé
 ```
-Entrée : "Le ciel est"
-Tokenisation : ["Le", "ciel", "est"]
-Prédictions possibles :
-- "bleu" (30% de probabilité)
-- "nuageux" (25% de probabilité)
-- "magnifique" (20% de probabilité)
+
+#### 🧠 **Comment ChatGPT traite vos requêtes**
+
+**Processus détaillé :**
+
+1. **Réception de votre prompt**
+   - Analyse de l'intention
+   - Identification du contexte
+   - Détection de la langue
+
+2. **Tokenisation intelligente**
+   ```
+   Votre texte : "Comment créer une stratégie marketing ?"
+   Tokens : ["Comment", "créer", "une", "strat", "égie", "marketing", "?"]
+   Tokens IDs : [7967, 5454, 1245, 8974, 2341, 9876, 30]
+   ```
+
+3. **Encodage et embeddings**
+   - Chaque token → vecteur de 12,288 dimensions (GPT-4)
+   - Capture du sens contextuel
+   - Relations sémantiques
+
+4. **Mécanisme d'attention**
+   - Analyse des relations entre tous les mots
+   - Pondération de l'importance
+   - Context window : 128,000 tokens (GPT-4 Turbo)
+
+5. **Génération de la réponse**
+   - Prédiction token par token
+   - Échantillonnage selon la température
+   - Vérification de cohérence
+
+### 1.2 Les différentes versions de ChatGPT
+
+#### 🎯 **Comparaison des versions disponibles**
+
+| Caractéristique | GPT-3.5 | GPT-4 | GPT-4 Turbo | GPT-4o |
+|----------------|---------|--------|-------------|---------|
+| **Disponibilité** | Gratuit | Plus (20$/mois) | Plus | Plus |
+| **Contexte** | 4,096 tokens | 8,192 tokens | 128,000 tokens | 128,000 tokens |
+| **Vitesse** | Très rapide | Lent | Rapide | Très rapide |
+| **Précision** | Bonne | Excellente | Excellente | Excellente |
+| **Vision** | ❌ | ✅ | ✅ | ✅ Native |
+| **Création images** | ❌ | DALL-E 3 | DALL-E 3 | DALL-E 3 |
+| **Browsing** | ❌ | ✅ | ✅ | ✅ |
+| **Code Interpreter** | ❌ | ✅ | ✅ | ✅ |
+| **Plugins** | ❌ | ✅ | ✅ | Intégrés |
+| **Coût API** | $0.002/1K | $0.03/1K | $0.01/1K | $0.005/1K |
+
+#### 💡 **Quelle version choisir ?**
+
+```mermaid
+graph TD
+    A[Besoin] --> B{Budget ?}
+    B -->|Gratuit| C[GPT-3.5]
+    B -->|20$/mois| D{Usage ?}
+    D -->|Basique| E[GPT-4]
+    D -->|Intensif| F{Type de tâche ?}
+    F -->|Texte long| G[GPT-4 Turbo]
+    F -->|Multimodal| H[GPT-4o]
+    F -->|Code/Analyse| I[GPT-4 + Code Interpreter]
 ```
 
-### 1.2 Capacités et limitations
+### 1.3 Fonctionnalités avancées de ChatGPT Plus
 
-#### ✅ **Ce que l'IA générative fait bien**
-- Comprendre le contexte et les nuances
-- Générer du texte cohérent et fluide
-- Traduire entre langues
-- Résumer et synthétiser l'information
-- Adapter le ton et le style
-- Créer du contenu original
+#### 🎨 **DALL-E 3 intégré**
+- Génération d'images directement dans le chat
+- Édition et variations
+- Respect du style demandé
 
-#### ❌ **Limitations importantes**
-- **Hallucinations** : Invention d'informations fausses mais plausibles
-- **Biais** : Reproduction des biais présents dans les données d'entraînement
-- **Actualité** : Connaissances limitées à la date de formation
-- **Raisonnement** : Difficultés avec la logique complexe et les mathématiques
-- **Cohérence** : Peut se contredire sur de longs textes
-- **Confidentialité** : Ne pas partager d'informations sensibles
+**Exemple de prompt image :**
+```
+Crée une illustration minimaliste d'un bureau moderne avec 
+une plante verte, un MacBook et une tasse de café, 
+style flat design, couleurs pastel
+```
 
-### 1.3 Paramètres clés des modèles
+#### 🔍 **Browsing (Navigation web)**
+- Recherche en temps réel
+- Accès aux informations actuelles
+- Vérification de faits
+- Analyse de pages web
 
-| Paramètre | Description | Impact | Valeur recommandée |
-|-----------|-------------|--------|-------------------|
-| **Temperature** | Contrôle la créativité | 0 = Déterministe, 1 = Créatif | 0.7 pour équilibre |
-| **Top-p** | Limite les choix de mots | 0.1 = Restrictif, 1 = Ouvert | 0.9 pour variété |
-| **Max tokens** | Longueur de la réponse | Court vs Long | Selon besoin |
-| **Frequency penalty** | Évite les répétitions | 0 = Répétitions OK | 0.3-0.5 |
-| **Presence penalty** | Favorise nouveaux sujets | 0 = Même thème OK | 0.3-0.5 |
+**Exemple d'utilisation :**
+```
+Recherche les dernières actualités sur l'IA générative 
+de cette semaine et fais-moi un résumé des 5 points clés
+```
+
+#### 💻 **Code Interpreter (Analyse de données)**
+- Exécution de code Python
+- Analyse de fichiers CSV/Excel
+- Création de graphiques
+- Traitement d'images
+- Calculs complexes
+
+**Exemple pratique :**
+```
+Voici mon fichier de ventes. Analyse les tendances, 
+crée des visualisations et identifie les produits 
+les plus performants par trimestre
+```
+
+#### 👁️ **Vision (GPT-4V)**
+- Analyse d'images
+- OCR (extraction de texte)
+- Description détaillée
+- Identification d'objets
+- Aide au design
+
+**Cas d'usage :**
+```
+[Upload image] Analyse cette maquette de site web 
+et suggère des améliorations UX/UI
+```
+
+### 1.4 Configuration optimale de ChatGPT
+
+#### ⚙️ **Paramètres personnalisés (Custom Instructions)**
+
+![Settings](https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?q=80&w=2000&auto=format&fit=crop)
+*Optimisez ChatGPT selon vos besoins*
+
+**Configuration recommandée :**
+
+```
+📝 What would you like ChatGPT to know about you?
+- Je suis [votre métier/rôle]
+- Je travaille dans [secteur/industrie]
+- Mes objectifs principaux sont [objectifs]
+- J'utilise principalement [outils/logiciels]
+- Mon niveau technique est [débutant/intermédiaire/avancé]
+
+💬 How would you like ChatGPT to respond?
+- Réponses concises et orientées action
+- Format structuré avec bullets points
+- Exemples concrets et applicables
+- Ton professionnel mais accessible
+- Toujours proposer des alternatives
+```
+
+#### 🎛️ **Paramètres API avancés**
+
+| Paramètre | Description | Impact | Cas d'usage |
+|-----------|-------------|--------|------------|
+| **Temperature** | Créativité des réponses | 0 = Factuel<br>1 = Créatif | 0.3 : Code/Analyse<br>0.7 : Contenu<br>0.9 : Brainstorming |
+| **Top-p** | Diversité du vocabulaire | 0.1 = Précis<br>1 = Varié | 0.5 : Technique<br>0.9 : Créatif |
+| **Max tokens** | Longueur maximale | 100-4000 | Email : 500<br>Article : 2000 |
+| **Frequency penalty** | Évite répétitions | -2 à 2 | 0.5 : Standard<br>1 : Très varié |
+| **Presence penalty** | Nouveaux sujets | -2 à 2 | 0.3 : Cohérent<br>0.7 : Exploratoire |
 
 ---
 
-## 📚 Leçon 2 : Les Fondamentaux du Prompt Engineering
+## 📚 Leçon 2 : Maîtrise complète de ChatGPT
 
-### 2.1 Anatomie d'un prompt efficace
+### 2.1 Guide d'utilisation pas à pas
 
-Un prompt bien structuré suit généralement ce schéma :
+#### 🚀 **Premier contact avec ChatGPT**
+
+```mermaid
+graph LR
+    A[Inscription] --> B[Version gratuite GPT-3.5]
+    B --> C{Satisfait ?}
+    C -->|Oui| D[Utilisation régulière]
+    C -->|Non| E[Upgrade Plus 20$/mois]
+    E --> F[GPT-4 + Fonctionnalités]
+    F --> G[Productivité x10]
+```
+
+#### 📱 **Interface et fonctionnalités**
+
+**Zone de conversation :**
+- **Nouveau chat** : Commencer une nouvelle conversation
+- **Historique** : Accès aux conversations précédentes
+- **Recherche** : Retrouver des échanges spécifiques
+- **Partage** : Créer des liens de partage
+- **Export** : Télécharger les conversations
+
+**Raccourcis clavier essentiels :**
+- `Ctrl/Cmd + K` : Nouvelle conversation
+- `Ctrl/Cmd + Shift + C` : Copier le dernier message
+- `Ctrl/Cmd + /` : Voir tous les raccourcis
+- `↑` : Éditer le dernier message envoyé
+
+### 2.2 Techniques de conversation efficaces
+
+#### 💬 **L'art de la conversation itérative**
+
+**Mauvaise approche :**
+```
+User : Écris un article sur le marketing
+ChatGPT : [Article générique de 500 mots]
+User : C'est nul, recommence
+```
+
+**Bonne approche :**
+```
+User : Je veux créer un article sur le marketing digital pour 
+des PME du secteur e-commerce. Commence par me proposer 
+5 angles d'approche différents
+
+ChatGPT : Voici 5 angles possibles...
+
+User : J'aime l'angle #3 sur le ROI. Développe un plan 
+détaillé en 5 sections avec les points clés
+
+ChatGPT : Plan structuré...
+
+User : Parfait. Maintenant rédige l'introduction et la 
+première section. Ton : professionnel mais accessible. 
+300 mots max.
+```
+
+#### 🔄 **Technique de raffinement progressif**
 
 ```
-[CONTEXTE] + [RÔLE] + [TÂCHE] + [FORMAT] + [CONTRAINTES] = RÉSULTAT OPTIMAL
+Étape 1 : Brainstorming large
+└── Étape 2 : Sélection et focus
+    └── Étape 3 : Développement détaillé
+        └── Étape 4 : Optimisation finale
+            └── Étape 5 : Variations et alternatives
+```
+
+### 2.3 Cas d'usage professionnels détaillés
+
+#### 📧 **Email professionnel parfait**
+
+**Prompt template complet :**
+```
+Contexte :
+- Destinataire : [Nom, poste, entreprise]
+- Relation : [Nouveau contact/Client existant/Collègue]
+- Historique : [Contexte pertinent]
+
+Objectif :
+- Principal : [Ce que vous voulez obtenir]
+- Secondaire : [Autres bénéfices]
+
+Contraintes :
+- Longueur : [150-200 mots]
+- Ton : [Formel/Semi-formel/Amical professionnel]
+- Urgence : [Haute/Moyenne/Basse]
+
+Éléments à inclure :
+- [Point 1]
+- [Point 2]
+- [CTA clair]
+
+Éléments à éviter :
+- [Jargon excessif]
+- [Demandes multiples]
+- [Ton trop insistant]
+
+Génère l'email avec :
+- Objet accrocheur
+- Corps structuré
+- Formule de politesse adaptée
+```
+
+#### 📊 **Analyse de données avec Code Interpreter**
+
+**Workflow complet :**
+1. **Upload du fichier** (CSV, Excel, JSON)
+2. **Exploration initiale**
+   ```
+   Analyse ce dataset et donne-moi :
+   - Aperçu des données (shape, types)
+   - Statistiques descriptives
+   - Valeurs manquantes
+   - Anomalies éventuelles
+   ```
+3. **Analyse approfondie**
+   ```
+   Maintenant :
+   - Identifie les corrélations importantes
+   - Détecte les tendances temporelles
+   - Segmente les données par [critère]
+   ```
+4. **Visualisations**
+   ```
+   Crée :
+   - Graphique d'évolution temporelle
+   - Heatmap des corrélations
+   - Distribution des variables clés
+   - Dashboard de synthèse
+   ```
+5. **Insights et recommandations**
+   ```
+   Basé sur l'analyse :
+   - Top 5 insights business
+   - Recommandations d'actions
+   - Prévisions possibles
+   ```
+
+---
+
+## 📚 Leçon 3 : Les Fondamentaux du Prompt Engineering pour ChatGPT
+
+### 3.1 Anatomie d'un prompt ChatGPT efficace
+
+![Prompt Engineering](https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2000&auto=format&fit=crop)
+*L'art et la science du prompt engineering*
+
+Un prompt bien structuré pour ChatGPT suit ce schéma optimisé :
+
+```
+[CONTEXTE] + [RÔLE] + [TÂCHE] + [FORMAT] + [CONTRAINTES] + [EXEMPLES] = RÉSULTAT PARFAIT
 ```
 
 #### 📝 **Exemple décomposé :**

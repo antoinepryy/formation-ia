@@ -288,7 +288,7 @@ Règles :
 
 **Prompt pour ads Meta :**
 ```
-Crée 5 variations de publicité Facebook pour [PRODUIT] :
+Crée 5 variations de publicité Facebook/Instagram pour [PRODUIT] :
 
 Pour chaque variation :
 PRIMARY TEXT : (125 caractères max pour mobile)
@@ -297,10 +297,11 @@ DESCRIPTION : (Optionnel, 30 caractères)
 
 Contraintes :
 - Pas de clickbait
-- Conformité Meta policies
+- Conformité Meta policies 2025
 - Mobile-first
 - Émoji stratégique (max 2)
 - Test différents angles psychologiques
+- Adaptation Reels/Stories
 ```
 
 ---
@@ -333,7 +334,7 @@ Contraintes :
 
 ### 4.2 Création de contenu SEO optimisé
 
-#### 📄 **Template article SEO 2024**
+#### 📄 **Template article SEO 2025**
 
 ```markdown
 # H1 : [Mot-clé principal] + Bénéfice
