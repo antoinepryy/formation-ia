@@ -76,6 +76,15 @@ Cette formation complète vous permettra de maîtriser l'Intelligence Artificiel
 - Présentation et feedback
 - Certification
 
+### Module 7 : IA pour les Comptables et Experts-Comptables (2h30)
+**📚 [Cours complet](modules/module7-comptabilite/cours.md) | 🏃 [Exercices](modules/module7-comptabilite/exercices.md)**
+
+- Automatisation des tâches comptables répétitives
+- Analyse financière assistée par IA
+- Rédaction de rapports et notes de synthèse
+- Conformité, veille réglementaire et déontologie
+- Cas pratiques métier (clôture, contrôle fiscal, reprise)
+
 ---
 
 ## 🛠️ Outils utilisés dans la formation
@@ -114,6 +123,7 @@ Cette formation s'adresse aux :
 - 🎨 **Créatifs et designers**
 - 👔 **Entrepreneurs et dirigeants**
 - 📊 **Consultants et formateurs**
+- 🧮 **Comptables et experts-comptables**
 - 🚀 **Toute personne souhaitant intégrer l'IA dans sa pratique**
 
 ### Prérequis
@@ -198,7 +208,8 @@ formation-ia/
 │   ├── module3/          # IA Créative
 │   ├── module4/          # Communication & Social
 │   ├── module5/          # Automatisation
-│   └── module6/          # Projet final
+│   ├── module6/          # Projet final
+│   └── module7-comptabilite/  # IA pour Comptables
 │
 ├── 📁 exercices/         # Tous les exercices
 │
